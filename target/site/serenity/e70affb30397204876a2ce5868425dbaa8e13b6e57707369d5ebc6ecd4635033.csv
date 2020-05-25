@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Stores CRUD test","This test will create a new store","SUCCESS","2020-05-25T22:08:14.194+01:00[Europe/London]","0.0","32.26"
+"Stores CRUD test","Update the product information and verify the updated information","SUCCESS","2020-05-25T22:08:47.410+01:00[Europe/London]","0.0","1.11"
+"Stores CRUD test","Delete the product and verify if the product is deleted","SUCCESS","2020-05-25T22:08:48.521+01:00[Europe/London]","0.0","0.73"

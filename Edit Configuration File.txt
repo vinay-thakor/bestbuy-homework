@@ -1,0 +1,44 @@
+Product:Crud
+clean verify -Dtags=ProductCrudTest serenity:aggregate
+
+Product:Smoke
+clean verify -Dtags=productFeature:Smoke serenity:aggregate
+
+Product:Sanity
+clean verify -Dtags=productFeature:Sanity serenity:aggregate
+
+Product:Positive
+clean verify -Dtags=productFeature:Positive serenity:aggregate
+
+Product:Negative
+clean verify -Dtags=productFeature:Negative serenity:aggregate
+
+
+Store:Crud
+clean verify -Dtags=StoreCrudTest serenity:aggregate
+
+Store:Smoke
+clean verify -Dtags=storeFeature:Smoke serenity:aggregate
+
+Store:Sanity
+clean verify -Dtags=storeFeature:Sanity serenity:aggregate
+
+Store:Positive
+clean verify -Dtags=storeFeature:Positive serenity:aggregate
+
+Store:Negative
+clean verify -Dtags=storeFeature:Negative serenity:aggregate
+
+
+Smoke:Regression
+clean verify "-Dtags = productFeature:Smoke, productFeature:Regression, storeFeature:Smoke, storeFeature:Regression" serenity:aggregate
+
+Sanity:Regression
+clean verify "-Dtags = productFeature:Sanity, productFeature:Regression, storeFeature:Sanity, storeFeature:Regression" serenity:aggregate
+
+Positive:Regression
+clean verify "-Dtags = productFeature:Positive, productFeature:Regression, storeFeature:Positive, storeFeature:Regression" serenity:aggregate
+
+Negative:Regression
+clean verify "-Dtags = productFeature:Negative, productFeature:Regression, storeFeature:Negative, storeFeature:Regression" serenity:aggregate
+
